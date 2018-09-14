@@ -1,0 +1,21 @@
+header {
+	background-image: url("../img/background-dog.jpg");
+	background-size: cover;
+  	background-position: center center;
+ 	background-repeat: no-repeat;
+ 	height: 721px;
+ 	vertical-align: middle;
+}
+
+h1 {
+	padding-top: 320px;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 50px;
+}
+
+.btn {
+	border-radius: 20px;
+	border-color: red !important;
+	opacity: .6;
+}
+
