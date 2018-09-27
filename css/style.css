@@ -16,13 +16,17 @@ header {
 	width: 100px
 }
 
+.btn-header:hover {
+	background-color: #494949;
+}
+
 .first-section {
 	padding-top: 350px;
 	margin-left: 300px;
 	margin-right: 300px;
 }
 
-.second-section {
+#second-section {
 	background-color: #9de97e;
 }
 
@@ -32,11 +36,16 @@ header {
 
 .second-section-col {
 	border-radius: 12px;
-	height: 168px;
+	height: 145px;
 	background-color: white;
 }
 
-.third-section {
+.second-section-row {
+	margin-bottom: 0px;
+	padding-bottom: 15px;
+}
+
+#third-section {
 	background-color: #3498db
 }
 
@@ -44,9 +53,10 @@ header {
 	border-radius: 12px;
 	background-color: white;
 	padding: 15px;
-	width: 245px;
+	width: 260px;
 	height: 214px
 }
+
 
 .third-section-row {
 	margin-bottom: 45px !important;
@@ -64,7 +74,7 @@ header {
 	width: 100px
 }
 
-.fourth-section{ 
+#fourth-section{ 
 	background-color: #e8e8e8;
 }
 
@@ -73,6 +83,7 @@ header {
 	background-color: white;
 	text-align: center;
 	padding: 15px !important;
+	box-shadow: 3px 3px 50px grey;
 }
 
 .fourth-section-text {
@@ -94,7 +105,7 @@ header {
 	margin-bottom: 50px;
 }
 
-.fifth-section {
+#fifth-section {
 	background-image: url("../img/dog-background-2.jpg");
 	height: 721px;
 	background-size: cover;
@@ -130,9 +141,44 @@ header {
 	width: 100px
 }
 
-.sixth-section{
+#sixth-section{
 	background-color: #373737;
 	text-align: center;
+}
+
+.nav-btn {
+	border-radius: 24px;
+	background-color: white;
+	border: 1px solid black;
+}
+.nav-btn:hover {
+	background-color: #494949;
+}
+
+.brand-logo {
+	margin-left: 50px;
+}
+
+.right-link {
+	margin-right: 50px;
+}
+
+.left-link {
+	margin-left: 90px;
+}
+
+.svg-icon {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+#footer-icon {
+	margin-top: 15px;
+}
+
+.footer-row {
+	margin-bottom: 0px;
+	margin-top: 0px;
 }
 
 h1{
@@ -162,6 +208,7 @@ isso vai facilitar o alinhamento
 
 
 TO DO
+add responsividade to containers
 make reponsive button
 define actual
 make responsive section 2
@@ -169,6 +216,9 @@ fix section 2 spacing
 insert section 3's icon
 insert iconns in 3 section texts
 insert icons in footer
+fix sgv
+pedir icone branco do dog do footer
+fix espaçamento do footer
 
 EXPLAIN
 difference between margin, border, and padding.
