@@ -1,18 +1,26 @@
 *{
 	font-family: 'Varela Round';
 }
-
 header {
+	background-color: #F0F8FF;
 	background-image: url("../img/dog-background.jpg");
-	height: 721px;
 	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	color: white;
+	text-align: center;
+	padding: 140px 0 100px;
+}
+
+@media (max-width: 768px) {
+  .second-section-img-div {
+  	display: none;
+  }
 }
 
 .btn-header {
 	border-radius: 24px;
 	background-color: #373737;
-	margin-left: 290px;
-	margin-top: 50px;
 	width: 100px
 }
 
@@ -21,9 +29,7 @@ header {
 }
 
 .first-section {
-	padding-top: 350px;
-	margin-left: 300px;
-	margin-right: 300px;
+	padding-top: 220px;
 }
 
 #second-section {
@@ -37,6 +43,7 @@ header {
 .second-section-col {
 	border-radius: 12px;
 	height: 145px;
+	max-width: 100%;
 	background-color: white;
 }
 
@@ -53,6 +60,7 @@ header {
 	border-radius: 12px;
 	background-color: white;
 	padding: 15px;
+	margin: 10px 10px 10px 10px;
 	width: 260px;
 	height: 214px
 }
@@ -79,12 +87,24 @@ header {
 }
 
 .fourth-section-col {
-	border-radius: 12px;
-	background-color: white;
-	text-align: center;
-	padding: 15px !important;
-	box-shadow: 3px 3px 50px grey;
+		border-radius: 12px;
+		background-color: white;
+		text-align: center;
+		box-shadow: 3px 3px 50px grey;
 }
+
+@media (min-width: 762px) {
+	.fourth-section-col {
+		padding: 15px !important;
+	}
+}
+
+@media (max-width: 762px) {
+	.fourth-section-col {
+		padding: 0px !important;
+	}	
+}
+
 
 .fourth-section-text {
 	padding-left: 60px;
@@ -106,16 +126,17 @@ header {
 }
 
 #fifth-section {
+	background-color: #F0F8FF;
 	background-image: url("../img/dog-background-2.jpg");
-	height: 721px;
 	background-size: cover;
+	height: 721px;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 .fifth-section-text {
 	margin-top: 280px;
 	margin-bottom: 20px;
-	margin-right: 100px;
-	margin-left: 100px;
 }
 
 #fifth-section-text-2 {
@@ -139,6 +160,10 @@ header {
 	margin-left: 115px;
 	margin-bottom: 10px;
 	width: 100px
+}
+
+.fifth-section-btn:hover {
+	background-color: #494949;
 }
 
 #sixth-section{
@@ -203,8 +228,6 @@ p {
 usei um height de 721px em vez de 1000px p/ background image do header
 font-sizes estão muito acima da realidade
 
-editar imagens da segunda sessão para que elas fiquem do mesmo formato e tamanho
-isso vai facilitar o alinhamento
 
 
 TO DO
