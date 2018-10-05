@@ -12,10 +12,15 @@ header {
 	padding: 140px 0 100px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .second-section-img-div {
   	display: none;
   }
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .btn-header {
@@ -42,7 +47,7 @@ header {
 
 .second-section-col {
 	border-radius: 12px;
-	height: 145px;
+	min-height: 130px;
 	max-width: 100%;
 	background-color: white;
 }
@@ -60,9 +65,8 @@ header {
 	border-radius: 12px;
 	background-color: white;
 	padding: 15px;
-	margin: 10px 10px 10px 10px;
-	width: 260px;
-	height: 214px
+	margin: 10px;
+	height: 90%;
 }
 
 
@@ -79,7 +83,7 @@ header {
 	border-radius: 24px;
 	background-color: #373737;
 	margin-bottom: 35px;
-	width: 100px
+	width: 100px;
 }
 
 #fourth-section{ 
@@ -145,8 +149,9 @@ header {
 
 .fifth-section-col {
 	background-color: white;
-	width: 350px !important;
+/*	width: 350px;*/
 	border-radius: 12px;
+	padding: 10px;
 }
 
 .fifth-secion-row {
@@ -157,7 +162,6 @@ header {
 	border-radius: 24px;
 	background-color: #373737;
 	margin-top: 10px;
-	margin-left: 115px;
 	margin-bottom: 10px;
 	width: 100px
 }
