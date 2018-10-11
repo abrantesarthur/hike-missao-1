@@ -6,15 +6,28 @@ header {
 	background-image: url("../img/dog-background.jpg");
 	background-size: cover;
 	background-position: center center;
-	background-repeat: no-repeat;
 	color: white;
 	text-align: center;
 	padding: 140px 0 100px;
 }
 
+/*header {
+	background-image: url("../img/dog-background.jpg");
+	background-size: cover;
+	background-position: center center;
+	padding: 140px 0 100px;
+	background-repeat: no-repeat;
+	color: white;
+	text-align: center;	
+}*/
+
 @media (max-width: 992px) {
   .second-section-img-div {
   	display: none;
+  }
+
+  .second-section-col h3, p{
+  		text-align: left !important;
   }
 }
 
@@ -71,7 +84,7 @@ header {
 
 
 .third-section-row {
-	margin-bottom: 45px !important;
+	margin-bottom: 0px !important;
 }
 
 .third-section-text {
@@ -106,7 +119,7 @@ header {
 @media (max-width: 762px) {
 	.fourth-section-col {
 		padding: 0px !important;
-	}	
+	}
 }
 
 
@@ -123,6 +136,11 @@ header {
 .fourth-section-name {
 	margin-top: 0px;
 	margin-bottom: 0px;
+	text-align: center !important
+}
+
+.fourth-section-row {
+	margin-bottom: 0px !important;
 }
 
 #fourth-section-last-col {
