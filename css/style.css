@@ -85,12 +85,26 @@ header {
 }
 
 .first-section {
-	padding-top: 220px;
+	background-color: #5ac8cf;
+	padding-top: 250px;
+	padding-bottom: 0px;
+}
+
+.first-section-row {
+	margin-bottom: 0px;
 }
 
 #first-section-h1 {
 	text-shadow: 0 19px 38px #000000;
 	text-transform: uppercase;
+	text-align: left;
+}
+#first-section-h4 {
+	text-shadow: 0 19px 38px #000000;
+	text-align: left;
+	margin-top: 0px;
+	margin-bottom: 30px;
+
 }
 
 #second-section {
@@ -279,6 +293,10 @@ h2 {
 h3 {
 	font-size: 16px;
 	text-transform: uppercase;
+}
+
+h4 {
+	font-size: 14px;
 }
 
 p {
