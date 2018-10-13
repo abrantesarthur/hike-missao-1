@@ -84,10 +84,26 @@ header {
 	background-color: #676767;
 }
 
+@media (max-width: 992px) {
+  .first-section-img-div {
+  	display: none;
+  }
+
+  .first-section {
+  	padding-bottom: 150px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .first-section {
+  	padding-top: 150px !important;
+  }
+}
+
 .first-section {
 	background-color: #5ac8cf;
 	padding-top: 250px;
-	padding-bottom: 0px;
+	padding-bottom: 30px;
 }
 
 .first-section-row {
