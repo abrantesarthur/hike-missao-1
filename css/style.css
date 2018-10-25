@@ -85,7 +85,7 @@ header {
 }
 
 @media (max-width: 992px) {
-  .first-section-img-div {
+  .first-section img{
   	display: none;
   }
 
@@ -110,13 +110,11 @@ header {
 	margin-bottom: 0px;
 }
 
-#first-section-h1 {
-	text-shadow: 0 19px 38px #000000;
+.first-section h1 {
 	text-transform: uppercase;
 	text-align: left;
 }
-#first-section-h4 {
-	text-shadow: 0 19px 38px #000000;
+.first-section h4 {s
 	text-align: left;
 	margin-top: 0px;
 	margin-bottom: 30px;
@@ -137,7 +135,7 @@ header {
   }
 }
 
-.second-section-img {
+.second-section-row img {
 	border-radius: 12px;
 	box-shadow: 0 19px 38px 0 rgba(0, 0, 0, 0.26);
 }
@@ -167,6 +165,8 @@ header {
 	margin: 10px;
 	height: 90%;
 	box-shadow: 0 19px 38px 0 rgba(0, 0, 0, 0.26);
+	text-align: center;
+	padding-top: 10px;
 }
 
 
@@ -174,10 +174,6 @@ header {
 	margin-bottom: 0px !important;
 }
 
-.third-section-text {
-	text-align: center;
-	padding-top: 10px;
-}
 
 #fourth-section{ 
 	background-color: #e8e8e8;
@@ -203,18 +199,18 @@ header {
 }
 
 
-.fourth-section-text {
+.fourth-section-col p {
 	padding-left: 60px;
 	padding-right: 60px;
 }
 
-.fourth-section-img {
+.fourth-section-col img {
 	border-radius: 50%;
 	margin-top: 15px;
 	width: 45px;
 }
 
-.fourth-section-name {
+.fourth-section-col i{
 	margin-top: 0px;
 	margin-bottom: 0px;
 	text-align: center !important
@@ -240,10 +236,6 @@ header {
 .fifth-section-text {
 	margin-top: 280px;
 	margin-bottom: 20px;
-}
-
-#fifth-section-text-2 {
-	margin-bottom: 0px;
 }
 
 .fifth-section-col {
