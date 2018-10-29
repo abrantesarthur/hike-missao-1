@@ -107,10 +107,6 @@ header {
 	padding-bottom: 30px;
 }
 
-.first-section-row {
-	margin-bottom: 0px;
-}
-
 .first-section h1 {
 	text-transform: uppercase;
 	text-align: left;
@@ -148,6 +144,10 @@ header {
 	background-color: white;
 	box-shadow: 0 19px 38px 0 rgba(0, 0, 0, 0.26);
 	padding: 0px 20px 0 20px !important;
+}
+
+.second-section-col h3 {
+	
 }
 
 .second-section-row {
