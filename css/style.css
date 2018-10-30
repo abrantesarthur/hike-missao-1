@@ -61,12 +61,7 @@
 
 header {
 	background-color: #F0F8FF;
-	background-image: url("../img/dog-background.jpg");
-	background-size: cover;
-	background-position: center center;
 	color: white;
-	text-align: center;
-	padding: 10px 0;
 }
 
 .btn-header {
@@ -247,32 +242,14 @@ h3 {
 }
 
 h4 {
-	font-size: 14px;
+	font-size: 15px;
 }
 
 p {
 	font-size: 13px;
 }
 
-/*notes
-usei um height de 721px em vez de 1000px p/ background image do header
-font-sizes estão muito acima da realidade
-
-
-
-TO DO
-add responsividade to containers
-make reponsive button
-define actual
-make responsive section 2
-fix section 2 spacing
-insert section 3's icon
-insert iconns in 3 section texts
-insert icons in footer
-fix sgv
-pedir icone branco do dog do footer
-fix espaçamento do footer
-
+/*
 EXPLAIN
 difference between margin, border, and padding.
 */
