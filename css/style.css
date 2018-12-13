@@ -90,6 +90,11 @@ header {
 	padding-top: 10px;
 }
 
+#third-section .svg-icon {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
 .flex {
 	display: flex;
 	flex-wrap: wrap;
@@ -156,11 +161,10 @@ header {
 #footer {
 	background-color: #373737;
 	text-align: center;
-	margin-bottom: 0px;
-	margin-top: 0px;
+	padding-bottom: 8px;
 }
 
-.svg-icon {
+#footer .svg-icon {
 	vertical-align: middle;
 	margin-right: 5px;
 }
