@@ -1,104 +1,45 @@
+
 *{
 	font-family: 'Varela Round';
 }
-.navbar {
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.16);	
-	height: 54px;
-	position: fixed;
-	width: 100%;
+
+nav {	
 	background-color: white;
 	z-index: 2;
 }
 
-.navbar img {
-	margin-top: 5px;
-	height: 36px;
-}
-
-.navbar li {
-	display: inline;
-}
-
-.navbar li:hover {
-	color: #676767;
-}
-
-.navbar a {
-	font-size: 12px;
+nav ul a {
 	text-transform: uppercase;
-	color: #373737;
-	padding-left: 12px;
-	padding-right: 12px;
+	color: black;
 }
 
-.navbar a:hover {
-	color: #676767;
+nav .brand-logo {
+	font-size: 3rem;
 }
 
-.nav-btn {
+nav i {
+	color: black;
+}
+
+#nav-btn span {
 	border-radius: 24px;
-	background-color: white;
 	border: 1px solid black;
-	box-shadow: none;
 	padding: 8px 12px 8px 12px;
 }
 
-.nav-btn:hover {
-	background-color: #878787;
+.sidenav {
+	text-transform: uppercase;
 }
 
-.btn-general {
+.btn {
 	border-radius: 32px;
 	background-color: #373737;
 	margin-bottom: 35px;
 	box-shadow: 0 19px 38px 0 rgba(0, 0, 0, 0.16);
 }
 
-.btn-general:hover {
+.btn:hover {
 	background-color: #676767;
-}
-
-
-header {
-	background-color: #F0F8FF;
-	background-image: url("../img/dog-background.jpg");
-	background-size: cover;
-	background-position: center center;
-	color: white;
-	text-align: center;
-	padding: 140px 0 100px;
-}
-
-
-.flex {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.btn-header {
-	border-radius: 32px;
-	background-color: #373737;
-	box-shadow: 0 19px 38px 0 rgba(0, 0, 0, 0.16);
-}
-
-.btn-header:hover {
-	background-color: #676767;
-}
-
-@media (max-width: 992px) {
-  .first-section img{
-  	display: none;
-  }
-
-  .first-section {
-  	padding-bottom: 150px !important;
-  }
-}
-
-@media (max-width: 600px) {
-  .first-section {
-  	padding-top: 150px !important;
-  }
 }
 
 .first-section {
@@ -108,55 +49,57 @@ header {
 }
 
 .first-section h1 {
-	text-transform: uppercase;
 	text-align: left;
 }
-.first-section h4 {s
+
+.first-section h4 {
 	text-align: left;
 	margin-top: 0px;
 	margin-bottom: 30px;
-
 }
 
 #second-section {
 	background-color: #9de97e;
 }
 
+#second-section .flex {
+	display: flex;
+}
+
+#second-section .row {
+	margin-bottom: 0px;
+	padding-bottom: 20px;
+}
+
+#second-section .row img {
+	border-radius: 12px;
+	box-shadow: 0 19px 38px 0 rgba(0, 0, 0, 0.26);
+}
+
+#second-section .card-panel {
+	border-radius: 12px;
+	min-height: 118px; /*defined the value based on the img height when it disappears*/
+	max-width: 100%;
+	margin: 0px;
+}
+
 @media (max-width: 992px) {
-  .second-section-img-div {
+  #second-section .img{
   	display: none;
   }
-
-  .second-section-col h3, p{
+  #second-section .card-panel h3, p{
   		text-align: left !important;
   }
 }
 
-.second-section-row img {
-	border-radius: 12px;
-	box-shadow: 0 19px 38px 0 rgba(0, 0, 0, 0.26);
-}
-
-.second-section-col {
-	border-radius: 12px;
-	min-height: 130px;
-	max-width: 100%;
-	background-color: white;
-	box-shadow: 0 19px 38px 0 rgba(0, 0, 0, 0.26);
-	padding: 0px 20px 0 20px !important;
-}
-
-.second-section-col h3 {
-
-}
-
-.second-section-row {
-	margin-bottom: 0px;
-	padding-bottom: 15px;
-}
 
 #third-section {
 	background-color: #3498db
+}
+
+#third-section .flex {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .third-section-col {
