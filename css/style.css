@@ -73,11 +73,15 @@ nav i {
 
 #second-section .row img {
 	border-radius: 12px;
-	box-shadow: 0 19px 38px 0 rgba(0, 0, 0, 0.26);
+}
+
+.card-panel {
+	border-radius: 12px;
+	text-align: center;
+	padding: 10px;
 }
 
 #second-section .card-panel {
-	border-radius: 12px;
 	min-height: 118px; /*defined the value based on the img height when it disappears*/
 	max-width: 100%;
 	margin: 0px; /*the card-panel comes with margins as default. this will eliminate them. inspect to show the margins*/
@@ -103,10 +107,7 @@ nav i {
 }
 
 #third-section .card-panel {
-	border-radius: 12px;
 	height: 90%;
-	text-align: center;
-	padding-top: 10px;
 }
 
 #third-section .row {
@@ -119,16 +120,9 @@ nav i {
 	padding-bottom: 30px;
 }
 
-#fourth-section .card-panel {
-	border-radius: 12px;
-	background-color: white;
-	text-align: center;
-	box-shadow: 3px 3px 50px grey;
-}
-
 #fourth-section p {
 	padding-left: 60px;
-	padding-right: 60px;
+	margin-right: 60px;
 }
 
 #fourth-section img {
@@ -137,26 +131,7 @@ nav i {
 	width: 45px;
 }
 
-#fourth-section i {
-	margin-top: 0px;
-	margin-bottom: 0px;
-	text-align: center !important
-}
-
-@media (min-width: 762px) {
-	#fourth-section .card-panel {
-		padding: 15px !important;
-	}
-}
-
-@media (max-width: 762px) {
-	#fourth-section .card-panel {
-		padding: 0px !important;
-	}
-}
-
 #fifth-section {
-	background-color: #F0F8FF;
 	background-image: url("../img/dog-background-2.jpg");
 	background-size: cover;
 	height: 721px;
@@ -164,55 +139,21 @@ nav i {
 	background-repeat: no-repeat;
 }
 
-.fifth-section-text {
+#fifth-section h1{
 	margin-top: 280px;
 	margin-bottom: 20px;
 }
 
-.fifth-section-col {
-	background-color: white;
-	border-radius: 12px;
-}
 
-.fifth-secion-row {
-	margin: 0px;
-}
-
-.fifth-section-btn {
-	border-radius: 24px;
+footer {
 	background-color: #373737;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	width: 100px
 }
 
-.fifth-section-btn:hover {
-	background-color: #494949;
-}
-
-#sixth-section{
-	background-color: #373737;
-	text-align: center;
-}
-
-.right-link {
-	margin-right: 50px;
-}
-
-.left-link {
-	margin-left: 90px;
-}
-
-.svg-icon {
-	vertical-align: middle;
-	margin-right: 5px;
-}
-
-#footer-icon {
+footer img {
 	margin-top: 15px;
 }
 
-.footer-row {
+footer .row {
 	margin-bottom: 0px;
 	margin-top: 0px;
 }
@@ -241,26 +182,3 @@ h4 {
 p {
 	font-size: 12px;
 }
-
-/*notes
-usei um height de 721px em vez de 1000px p/ background image do header
-font-sizes estão muito acima da realidade
-
-
-
-TO DO
-add responsividade to containers
-make reponsive button
-define actual
-make responsive section 2
-fix section 2 spacing
-insert section 3's icon
-insert iconns in 3 section texts
-insert icons in footer
-fix sgv
-pedir icone branco do dog do footer
-fix espaçamento do footer
-
-EXPLAIN
-difference between margin, border, and padding.
-*/
