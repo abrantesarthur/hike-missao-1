@@ -58,8 +58,22 @@ nav i {
 	margin-bottom: 30px;
 }
 
+.card-panel {
+	border-radius: 12px;
+	text-align: center;
+	padding: 10px;
+}
+
 #second-section {
 	background-color: #9de97e;
+}
+
+#second-section img {
+	border-radius: 12px;
+}
+
+#second-section .card-panel {
+	margin: 0px; /*the card-panel comes with margins as default. this will eliminate them. inspect to show the margins*/
 }
 
 #second-section .flex {
@@ -69,22 +83,6 @@ nav i {
 #second-section .row {
 	margin-bottom: 0px;
 	padding-bottom: 20px;
-}
-
-#second-section .row img {
-	border-radius: 12px;
-}
-
-.card-panel {
-	border-radius: 12px;
-	text-align: center;
-	padding: 10px;
-}
-
-#second-section .card-panel {
-	min-height: 118px; /*defined the value based on the img height when it disappears*/
-	max-width: 100%;
-	margin: 0px; /*the card-panel comes with margins as default. this will eliminate them. inspect to show the margins*/
 }
 
 @media (max-width: 992px) {
@@ -101,13 +99,17 @@ nav i {
 	background-color: #3498db
 }
 
+#third-section .card-panel {
+	height: 90%;
+}
+
+#third-section h3 {
+	margin-top: 0px;
+}
+
 #third-section .flex {
 	display: flex;
 	flex-wrap: wrap;
-}
-
-#third-section .card-panel {
-	height: 90%;
 }
 
 #third-section .row {
