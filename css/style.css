@@ -1,9 +1,8 @@
-
 *{
 	font-family: 'Varela Round';
 }
 
-nav {	
+nav {
 	background-color: white;
 	z-index: 2;
 }
@@ -21,166 +20,219 @@ nav i {
 	color: black;
 }
 
-#nav-btn span {
-	border-radius: 24px;
-	border: 1px solid black;
-	padding: 8px 12px 8px 12px;
-}
-
 .sidenav {
 	text-transform: uppercase;
 }
 
-.btn {
+header {
+	background-color: #F0F8FF;
+	color: white;
+}
+
+.btn-header {
 	border-radius: 32px;
-	background-color: #373737;
-	margin-bottom: 35px;
-	box-shadow: 0 19px 38px 0 rgba(0, 0, 0, 0.16);
+	background-color: transparent;
+	box-shadow: none;
+	border: 1.5px solid white;
 }
 
-.btn:hover {
+.btn-header:hover {
 	background-color: #676767;
+	box-shadow: none;
 }
 
-.first-section {
+/*
+ * Como as imagens são carregadas como se fossem letras, o display padrão é inline e fica com aquele "gap" em baixo
+ * aí trocando pra block isso é arrumado e o gap desaparece.
+ */
+.header img {
+	display: block;
+}
+
+#first-section {
 	background-color: #5ac8cf;
-	padding-top: 250px;
-	padding-bottom: 30px;
+	padding-top: 12%;
 }
 
-.first-section h1 {
+#first-section h1 {
 	text-align: left;
 }
-
-.first-section h4 {
+#first-section h4 {
 	text-align: left;
 	margin-top: 0px;
 	margin-bottom: 30px;
 }
 
-.card-panel {
-	border-radius: 12px;
-	text-align: center;
-	padding: 10px;
+.row {
+	margin-bottom: 0px;
 }
 
 #second-section {
 	background-color: #9de97e;
-}
-
-#second-section img {
-	border-radius: 12px;
+	padding: 60px 0;
 }
 
 #second-section .card-panel {
-	margin: 0px; /*the card-panel comes with margins as default. this will eliminate them. inspect to show the margins*/
+	border-radius: 12px;
+	box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.26);
+	margin-top: 24px;
 }
 
-#second-section .flex {
-	display: flex;
+#second-section img {
+	border-radius: 6px;
 }
-
-#second-section .row {
-	margin-bottom: 0px;
-	padding-bottom: 20px;
-}
-
-@media (max-width: 992px) {
-  #second-section .img{
-  	display: none;
-  }
-  #second-section .card-panel h3, p{
-  		text-align: left !important;
-  }
-}
-
 
 #third-section {
-	background-color: #3498db
+	background-color: #3498db;
+	padding: 60px 0 24px;
 }
 
 #third-section .card-panel {
+	border-radius: 12px;
+	background-color: white;
+	padding: 15px;
+	margin: 10px;
 	height: 90%;
+	box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.26);
+	text-align: center;
+	padding-top: 10px;
 }
 
-#third-section h3 {
-	margin-top: 0px;
+#third-section .svg-icon {
+	vertical-align: middle;
+	margin-right: 5px;
 }
 
-#third-section .flex {
+.flex {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-#third-section .row {
-	margin-bottom: 0px !important;
+.btn-general {
+	border-radius: 32px;
+	background-color: #373737;
+	box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.16);
+	margin-top: 24px;
 }
 
+.btn-general:hover {
+	background-color: #676767;
+}
 
-#fourth-section { 
+#fourth-section {
 	background-color: #e8e8e8;
-	padding-bottom: 30px;
+	padding: 60px 0 24px;
 }
 
-#fourth-section p {
-	padding-left: 60px;
-	margin-right: 60px;
+#fourth-section .card-panel {
+	border-radius: 12px;
+	background-color: white;
+	text-align: center;
+	box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.16);
 }
 
-#fourth-section img {
+#fourth-section .card-panel img {
 	border-radius: 50%;
 	margin-top: 15px;
 	width: 45px;
 }
 
+#fourth-section p {
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+#fourth-section span {
+	color: #676767;
+	font-size: 12px;
+}
+
 #fifth-section {
 	background-image: url("../img/dog-background-2.jpg");
 	background-size: cover;
-	height: 721px;
+	height: 760px;
 	background-position: center center;
 	background-repeat: no-repeat;
 }
 
-#fifth-section h1{
-	margin-top: 280px;
-	margin-bottom: 20px;
+#fifth-section h1 {
+	padding-top: 25%;
+	margin: 0px 0px;
+	padding-bottom: 5%;
 }
 
+#fifth-section .card-panel {
+	border-radius: 12px;
+	padding: 24px 0;
+}
 
-footer {
+#footer {
 	background-color: #373737;
+	text-align: center;
+	padding-bottom: 8px;
 }
 
-footer img {
+#footer .svg-icon {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+#footer img {
 	margin-top: 15px;
-}
-
-footer .row {
-	margin-bottom: 0px;
-	margin-top: 0px;
 }
 
 h1{
 	font-size: 40px;
 	text-align: center;
-	text-transform: uppercase;	
+	text-transform: uppercase;
+	color: white;
 }
 
 h2 {
 	font-size: 24px;
 	text-align: center;
 	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 0;
+	color: white;
+	text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.16);
 }
 
 h3 {
-	font-size: 16px;
+	font-size: 18px;
 	text-transform: uppercase;
 }
 
 h4 {
-	font-size: 14px;
+	font-size: 17px;
 }
 
-p {
-	font-size: 12px;
+@media (max-width: 992px) {
+	#first-section img{
+		display: none;
+	}
+
+	#first-section {
+		padding-bottom: 100px !important;
+	}
+
+	.card-panel img	 {
+		display: none;
+	}
+}
+
+@media (min-width: 762px) {
+	#fourth-section .card-panel {
+		padding: 15px !important;
+	}
+
+	#fourth-section .card-panel {
+		padding: 0px !important;
+	}
+}
+
+@media (max-width: 600px) {
+	#first-section {
+		padding-top: 100px !important;
+	}
 }
