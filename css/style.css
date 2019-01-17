@@ -31,22 +31,14 @@ header {
 
 .btn-header {
 	border-radius: 32px;
-	background-color: transparent;
+	background-color: #373737;
 	box-shadow: none;
-	border: 1.5px solid white;
+	padding: 0 30px;
 }
 
 .btn-header:hover {
 	background-color: #676767;
 	box-shadow: none;
-}
-
-/*
- * Como as imagens são carregadas como se fossem letras, o display padrão é inline e fica com aquele "gap" em baixo
- * aí trocando pra block isso é arrumado e o gap desaparece.
- */
-.header img {
-	display: block;
 }
 
 #first-section {
@@ -58,9 +50,14 @@ header {
 	text-align: left;
 }
 #first-section h4 {
+	font-size: 20px;
 	text-align: left;
 	margin-top: 0px;
 	margin-bottom: 30px;
+}
+
+#first-section img {
+	display: block;
 }
 
 .row {
@@ -138,8 +135,7 @@ header {
 }
 
 #fourth-section p {
-	padding-left: 60px;
-	padding-right: 60px;
+	padding: 0 60px
 }
 
 #fourth-section span {
@@ -172,13 +168,22 @@ header {
 	padding-bottom: 8px;
 }
 
-#footer .svg-icon {
-	vertical-align: middle;
-	margin-right: 5px;
+#footer img {
+	margin-top: 20px;
 }
 
-#footer img {
-	margin-top: 15px;
+#footer .svg-icon {
+	vertical-align: middle;
+	margin: 15px 6px;
+}
+
+#footer p {
+	margin: 0;
+}
+
+#footer .endereço {
+	font-size: 12px;
+	margin-bottom: 20px;
 }
 
 h1{
@@ -196,6 +201,10 @@ h2 {
 	margin-top: 0;
 	color: white;
 	text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.16);
+}
+
+#depoimentos {
+	color: black;
 }
 
 h3 {
@@ -216,8 +225,12 @@ h4 {
 		padding-bottom: 100px !important;
 	}
 
-	.card-panel img	 {
+	#second-section img	 {
 		display: none;
+	}
+
+	#fourth-section p {
+		padding: 0px;
 	}
 }
 
@@ -225,14 +238,34 @@ h4 {
 	#fourth-section .card-panel {
 		padding: 15px !important;
 	}
-
-	#fourth-section .card-panel {
-		padding: 0px !important;
-	}
 }
 
 @media (max-width: 600px) {
 	#first-section {
 		padding-top: 100px !important;
+	}
+
+	#first-section h1 {
+		text-align: center;
+	}
+
+
+
+
+	#fourth-section .card-panel {
+		padding: 10px;
+	}
+
+	#fifth-section {
+		padding: 120px 0 80px 0;
+		height: auto;
+	}
+
+	#fifth-section .card-panel {
+		padding: 10px 25px;
+	}
+
+	h1 {
+		font-size: 24px;
 	}
 }
