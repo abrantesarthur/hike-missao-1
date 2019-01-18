@@ -33,7 +33,6 @@ header {
 	border-radius: 32px;
 	background-color: #373737;
 	box-shadow: none;
-	padding: 0 30px;
 }
 
 .btn-header:hover {
@@ -73,10 +72,28 @@ header {
 	border-radius: 12px;
 	box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.26);
 	margin-top: 24px;
+	padding: 0;
+}
+
+#second-section .col {
+	padding: 0;
 }
 
 #second-section img {
-	border-radius: 6px;
+	border-radius: 6px 0 0 6px;
+	display: block;
+}
+
+#second-section h3, p {
+	padding: 0 20px;
+}
+
+#right-card {
+	text-align: right;
+}
+
+#right-card img {
+	border-radius: 0 6px 6px 0;
 }
 
 #third-section {
@@ -88,7 +105,6 @@ header {
 	border-radius: 12px;
 	background-color: white;
 	padding: 15px;
-	margin: 10px;
 	height: 90%;
 	box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.26);
 	text-align: center;
@@ -98,6 +114,10 @@ header {
 #third-section .svg-icon {
 	vertical-align: middle;
 	margin-right: 5px;
+}
+
+#third-section p {
+	color: rgba(0, 0, 0, 0.54);
 }
 
 .flex {
@@ -217,40 +237,43 @@ h4 {
 }
 
 @media (max-width: 992px) {
-	#first-section img{
-		display: none;
+	#second-section .card-panel {
+		text-align: center;
+		padding: 12px 24px;
 	}
 
-	#first-section {
-		padding-bottom: 100px !important;
+	#second-section h3, p {
+		padding: 0;
 	}
 
-	#second-section img	 {
-		display: none;
-	}
-
-	#fourth-section p {
-		padding: 0px;
+	#top-image {
+		margin-bottom: 20px;
 	}
 }
 
 @media (min-width: 762px) {
-	#fourth-section .card-panel {
-		padding: 15px !important;
+	#first-section h1 {
+		font-size: 36px;
+	}
+
+	#first-section h4 {
+		font-size: 16px;
 	}
 }
 
 @media (max-width: 600px) {
 	#first-section {
-		padding-top: 100px !important;
+		padding: 100px 0;
 	}
 
 	#first-section h1 {
 		text-align: center;
 	}
 
-
-
+	.btn-header {
+		padding: initial;
+		width: 100%;
+	}
 
 	#fourth-section .card-panel {
 		padding: 10px;
