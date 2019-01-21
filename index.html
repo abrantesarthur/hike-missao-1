@@ -2,22 +2,18 @@
 <html>
 <head>
 	<title>Adote um Dog</title>
-	<meta charset='utf-8'>
-	<!--Import Google Icon Font-->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-	<!-- Import Google Font 'Varela Round' -->
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 
-	<!--Import materialize.css-->
-	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
-	<!--Let browser know website is optimized for mobile-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
 
+<body>
 	<!-- navbar -->
 	<div class="navbar-fixed">
 		<nav>
@@ -25,15 +21,13 @@
 				<div class="nav-wrapper">
 					<a href="#" class="brand-logo">
 						<img height="32" src="img/dog-icon.png">
-						<!-- <span>AdoteUmDog</span>  -->
-						<!-- Isso precisa estar alinhado verticalmente na página -->
 					</a>
 					<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
 						<li><a href="#second-section">Por que cachorros</a></li>
 				  		<li><a href="#third-section">Como cuidar</a></li>
 				  		<li><a href="#fourth-section">Depoimentos</a></li>
-				  		<li><a href="#fifth-section" id="nav-btn"><span>Adotar</span></a></li>
+				  		<li><a href="#fifth-section">Adotar</a></li>
 					</ul>
 				</div>
 			</div>
@@ -47,15 +41,19 @@
 	</ul>
 
 	<!-- header -->
-	<header id="first-section" class="first-section">
+	<header id="first-section">
 		<div class="container">
 			<div class="row">
-				<div class="col l8 left-align">
-						<h1>Adote um cachorro e torne sua vida mais feliz </h1>
-						<h4>Muitos dizem que os nossos companheiros de quatro patas são os animais mais incríveis do mundo. Adote um e descubra porquê.</h4>
-						<a class="waves-effect waves-light btn"><i class="material-icons right">keyboard_arrow_right</i>Adotar</a>
+				<div class="col l8 m7 s12 left-align">
+					<div class="col">
+						<h1>Adote um cachorro e torne sua vida mais feliz</h1>
+					</div>
+					<div class="col m12 s4 offset-s4">
+						<h4 class="hide-on-small-only">Muitos dizem que os nossos companheiros de quatro patas são os animais mais incríveis do mundo. Adote um e descubra porquê.</h4>
+						<a class="waves-effect waves-light btn btn-header">Adotar</a>
+					</div>
 				</div>
-				<div class="col l4">
+				<div class="col m4 hide-on-small-only">
 					<img width="300px" src="img/dog-background.png">
 				</div>
 			</div>
@@ -64,37 +62,39 @@
 
 	<!-- second section -->
 	<div id="second-section">
+		<div class="center-align">
+			<h2>Por que cachorros?</h2>
+		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col s12">
-					<h2  class="white-text">por que cachorros?</h2>
-				</div>
-			</div>
-			<div class="row flex">
-				<div class="col s4 img valign-wrapper">
-					<img height="145" class="responsive-img" src="img/dog-playing.jpg">
-				</div>
-				<div class="col s8 push-s2 l8 card-panel">
-					<h3 class="left-align">estão sempre animados para brincar com você</h3>
-					<p class="left-align">Teve um dia ruim? Quando chegar em casa, seu cãozinho vai estar te esperando para brincar com você e alegrar seu dia :)</p>
-				</div>
-			</div>
-			<div class="row flex">
-				<div class="col s8 push-s2 l8 card-panel">
-					<h3 class="right-align">são seus companheiros de todas as horas</h3>
-					<p class="right-align">Não é à toa que os dogs são conhecidos como os melhores amigos dos humanos: eles sempre estão oferecendo muito amor e carinho pros seus donos.</p>
-				</div>
-				<div class="col s4 img valign-wrapper">
-					<img height="145" class="responsive-img" src="img/dog-cuddling.jpg">
-				</div>
-			</div>
-			<div class="row flex">
-				<div class="col s4 img valign-wrapper">
-					<img height="145" class="responsive-img" src="img/dog-jumping.jpg">
-				</div>
-				<div class="col s8 push-s2 l8 card-panel">
-					<h3>nos fazem rir com suas peripécias</h3>
-					<p>Além de tudo, tem outro detalhe que tornam os cachorros seres adoráveis: eles têm um talento incrível de nos arrancar boas risadas com as coisas que aprontam.</p>
+				<div class="col m10 s12 offset-m1">
+					<div class="row card-panel valign-wrapper">
+						<div class="col s4 hide-on-med-and-down">
+							<img src="img/dog-playing.jpg" class="responsive-img">
+						</div>
+						<div class="col l8 s12">
+							<h3>Estão sempre animados para brincar com você</h3>
+							<p>Teve um dia ruim? Não se preocupe; quando chegar em casa, seu cãozinho vai estar te esperando para brincar com você e alegrar seu dia :)</p>
+						</div>
+					</div>
+					<div id="right-card" class="row card-panel valign-wrapper">
+						<div class="col l8 s12">
+							<h3>São seus companheiros de todas as horas</h3>
+							<p>Não é à toa que os dogs são conhecidos como os melhores amigos dos humanos: eles sempre estão oferecendo muito amor e carinho pros seus donos.</p>
+						</div>
+						<div class="col s4 hide-on-med-and-down">
+							<img src="img/dog-cuddling.jpg" class="responsive-img">
+						</div>
+					</div>
+					<div class="row card-panel valign-wrapper">
+						<div class="col s4 hide-on-med-and-down">
+							<img src="img/dog-jumping.jpg" class="responsive-img">
+						</div>
+						<div class="col l8 s12">
+							<h3>Nos fazem rir com suas peripécias</h3>
+							<p>Além de tudo, tem outro detalhe que tornam os cachorros seres adoráveis: eles têm um talento incrível de nos arrancar boas risadas com as coisas que aprontam</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -102,60 +102,69 @@
 
 	<!-- third section -->
 	<div id="third-section">
+		<div class="center-align">
+			<h2>Como cuidar</h2>
+			<img id="top-image" width="48" src="img/dog-icon-2.png">
+		</div>
 		<div class="container">
-			<div class="row center-align">
-				<div class="col s12">
-					<h2 class="white-text">como cuidar</h2>
-					<img width="48" src="img/dog-icon-2.png">
-				</div>
-			</div>
-			<div class="row flex">
-				<div class="col s12 m6 l4">
-					<div class="card-panel">
-						<img width="35" src="img/icon-dog-food.svg">
-						<h3>alimente bem</h3>
-						<p>Deixe sempre ága fresca para seu cachorro, longe do sol. Evite dar restos de comida, pois só a ração tem os nutrientes de que seu cão precisa em uma dosagem equilibrada.</p>	
-					</div>
-				</div>
-				<div class="col s12 m6 l4">
-					<div class="card-panel">
-						<img width="35" src="img/icon-dog-walking.svg">
-						<h3>leve para passear<h3>
-						<p>Lembre-se de que a forma como seu cão se comporta interfere na maneira como as outras pessoas acabam vendo os cachorros em geral.</p>
-					</div>
-				</div>
-				<div class="col s12 m6 l4">
-					<div class="card-panel">
-						<img width="35" src="img/icon-dog-bath.svg">
-						<h3>dê banho</h3>
-						<p>Dê banhos apenas quando ele estiver sujo, pois banho em excesso pode ressecar sua pele e pelagem. Use sempre produtos próprios para cães, de preferência com cheiro suave.</p>
-					</div>
-				</div>
-				<div class="col s12 m6 l4">
-					<div class="card-panel">
-						<img width="35" src="img/icon-dog-training.svg">
-						<h3>eduque</h3>
-						<p>Nunca grite nem bata em seu cão. No mercado há manuais que mostram como educá-lo. Seguir as dicas de um manual pode ser excelente para a convivência do cão com você e sua família.</p>	
-					</div>
-				</div>
-				<div class="col s12 m6 l4">
-					<div class="card-panel">
-						<img width="35" src="img/icon-dog-vet.svg">
-						<h3>leve ao veterinário</h3>
-						<p>Em caso de qualquer alteração no apetite, pelagem, ou comportamento do seu cão, leve-o ao veterinário. Mesmo que esteja tudo bem, leve-o para fazer um check-up anual.</p>
-					</div>
-				</div>
-				<div class="col s12 m6 l4">
-					<div class="card-panel">
-						<img width="35" src="img/icon-dog-playing.svg">
-						<h3>brinque</h3>
-						<p>Cães adoram brinquedos de morder: ossos de borracha, plástico ou náilon. Não dê a ele objetos com pedaços que possam ser engolidos.</p>
+			<div class="row">
+				<div class="col l10 s12 offset-l1">
+					<div class="row flex">
+						<div class="col s12 m6 l4">
+							<div class="card-panel">
+								<h3 class="left-align">
+									<img width="35" class="svg-icon" src="img/icon-dog-food.svg" type="image/svg+xml">alimente bem
+								</h3>
+								<p>Deixe sempre água fresca para seu cachorro, longe do sol. Evite dar restos de comida, pois só a ração tem os nutrientes de que seu cão precisa em uma dosagem equilibrada.</p>
+							</div>
+						</div>
+						<div class="col s12 m6 l4">
+							<div class="card-panel">
+								<h3 class="left-align">
+									<img width="35" class="svg-icon" src="img/icon-dog-walking.svg" type="image/svg+xml">leve para passear
+								</h3>
+								<p>Lembre-se de que a forma como seu cão se comporta interfere na maneira como as outras pessoas acabam vendo os cachorros em geral.</p>
+							</div>
+						</div>
+						<div class="col s12 m6 l4">
+							<div class="card-panel">
+								<h3 class="left-align">
+									<img width="35" class="svg-icon" src="img/icon-dog-bath.svg" type="image/svg+xml">dê banho
+								</h3>
+								<p>Dê banhos apenas quando ele estiver sujo, pois banho em excesso pode ressecar sua pele e pelagem. Use sempre produtos próprios para cães, de preferência com cheiro suave.</p>
+							</div>
+						</div>
+						<div class="col s12 m6 l4">
+							<div class="card-panel">
+								<h3 class="left-align">
+									<img width="35" class="svg-icon" src="img/icon-dog-training.svg" type="image/svg+xml">eduque
+								</h3>
+								<p>Nunca grite nem bata em seu cão. No mercado há manuais que mostram como educá-lo. Seguir as dicas de um manual pode ser excelente para a convivência do cão com você e sua família.</p>
+							</div>
+						</div>
+						<div class="col s12 m6 l4">
+							<div class="card-panel">
+								<h3 class="left-align">
+									<img width="35" class="svg-icon" src="img/icon-dog-vet.svg" type="image/svg+xml">leve ao veterinário
+								</h3>
+								<p>Em caso de qualquer alteração no apetite, pelagem, ou comportamento do seu cão, leve-o ao veterinário. Mesmo que esteja tudo bem, leve-o para fazer um check-up anual.</p>
+							</div>
+						</div>
+						<div class="col s12 m6 l4">
+							<div class="card-panel">
+								<h3 class="left-align">
+									<img width="35" class="svg-icon" src="img/icon-dog-playing.svg" type="image/svg+xml">brinque
+								</h3>
+								<p>Cães adoram brinquedos de morder: ossos de borracha, plástico ou náilon. Não dê a ele objetos com pedaços que possam ser engolidos.</p>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col s12 center-align">
-					<a class="waves-effect waves-light btn">Adotar</a>
+					<a class="waves-effect waves-light btn btn-general">Adotar</a>
 				</div>
 			</div>
 		</div>
@@ -163,14 +172,12 @@
 
 	<!-- fourth section -->
 	<div id="fourth-section">
+		<div class="center-align">
+			<h2 id="depoimentos">Depoimentos</h2>
+		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col s6 push-s3">
-					<h2>depoimentos</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col s10 push-s1 card-panel">
+				<div class="card-panel col l10 s12 offset-l1">
 					<p>Adotamos o Nino faz 8 anos, e a vida aqui em casa se tornou muito mais feliz desde então. Ela é muito carinhosa e brincalhona, e sempre nos diverte bastante. Só quem tem um cachorrinho sabe o quanto essas criaturinhas são capazes de iluminar nossas vidas!</p>
 					<img src="img/dagmar.jpg">
 					<br>
@@ -178,15 +185,15 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col s10 push-s1 card-panel">
+				<div class="card-panel col l10 s12 offset-l1">
 					<p>Antes de mudar para a capital, morava com meus pais no interior, e lá tínhamos uma cadelinha chamada Lila. Quando vim pra cá, comecei a sentir muita falta de alguma coisa além da presença dos meus pais, mas não sabia direito o que era. Demorei para perceber que era de um animalzinho em casa! Recentemente adotei o Rex, que hoje me faz companhia e me alegra todos os dias :)</p>
 					<img src="img/douglas.jpg">
 					<br>
-					<span>Douglas, 23</span>
+					<span>Rafael, 23</span>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col s10 push-s1 card-panel">
+				<div class="card-panel col l10 s12 offset-l1">
 					<p>Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Cevadis im ampola pa arma uma pindureta. Quem num gosta di mé, boa gentis num é. Suco de cevadiss deixa as pessoas mais interessantis.</p>
 					<img src="img/ester.jpg">
 					<br>
@@ -196,21 +203,18 @@
 		</div>
 	</div>
 
-	<!-- fifth section -->
 	<div id="fifth-section">
 		<div class="container">
-			<div class="row center-align">
-				<div class="col"> <!-- Excluir essa classe -->
-					<h1 class="white-text">pronto para adotar um cãozinho?</h1>
-				</div>
-			</div>
+			<h1>Pronto para adotar um cãozinho?</h1>
 			<div class="row">
 				<div class="col l6 m8 s12 push-l3 push-m2">
 					<div class="card-panel center-align">
-						<div class="input-field">
-							<input id="email" type="email" class="validate">
-							<label for="email">Email</label>
-							<a target="_blank" href="https://www.google.com" class="btn btn-general">Adotar</a>
+						<div class="container">
+							<div class="input-field">
+								<input id="email" type="email" class="validate">
+								<label for="email">Deixe seu email</label>
+								<a target="_blank" href="https://www.google.com" class="btn btn-general">Adotar</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -220,22 +224,32 @@
 
 	<!-- footer -->
 	<footer id="footer">
-		<div class="container center-align">
-			<div class="row">
+		<div class="container">
+			<div class="row center-align">
 				<div class="col s12">
 					<img width="48" src="img/dog-icon-footer.png">
 					<p class="white-text">AdoteUmDog</p>
-					<a href="https://www.google.com" target="_blank"><img width="15" src="img/facebook.svg" type="image/svg+xml"></a>
-					<a href="https://www.google.com"><img width="15" src="img/whatsapp.svg" type="image/svg+xml"></a>
-					<a href="https://www.google.com"><img width="15" src="img/instagram.svg" type="image/svg+xml"></a>
-					<a href="https://www.google.com"><img width="15" src="img/twitter.svg" type="image/svg+xml"></a>
-					<p class="white-text">Endereço Genérico, 123. Jardim Santa Clarice - Indaguatá - GR</p>
+					<a href="https://www.google.com" target="_blank"><img width="20" class="svg-" src="img/facebook.svg" type="image/svg+xml"></a>
+					<a href="https://www.google.com" target="_blank"><img width="20" class="svg-" src="img/whatsapp.svg" type="image/svg+xml"></a>
+					<a href="https://www.google.com" target="_blank"><img width="20" class="svg-" src="img/instagram.svg" type="image/svg+xml"></a>
+					<a href="https://www.google.com" target="_blank"><img width="20" class="svg-" src="img/twitter.svg" type="image/svg+xml"></a>
+				</div>
+			</div>
+				<div class="col s4 push-s4 endereço">
+					<p class="white-text">AdoteUmDog.</p>
+					<p class="white-text hide-on-med-and-down">Endereço Genérico, 123. Jardim Santa Clarice - Indaguatá - GR</p>
 				</div>
 			</div>
 		</div>
 	</footer>
 
-	<!--JavaScript at end of body for optimized loading-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+
 	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<!-- Compiled and minified JavaScript -->
+	<!--JavaScript at end of body for optimized loading-->
+	<script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>
