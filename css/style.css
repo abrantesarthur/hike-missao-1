@@ -48,6 +48,7 @@ header {
 #first-section h1 {
 	text-align: left;
 }
+
 #first-section h4 {
 	font-size: 20px;
 	text-align: left;
@@ -57,36 +58,51 @@ header {
 
 #first-section img {
 	display: block;
+	/*WHY DISPLAY AS A BLOCK?*/
+	max-width: 100%;
 }
+
 
 .row {
 	margin-bottom: 0px;
 }
+
 
 #second-section {
 	background-color: #9de97e;
 	padding: 60px 0;
 }
 
-#second-section .card-panel {
+#second-section .row {
+	margin-bottom: 0px;
+	padding-bottom: 20px;
+}
+
+#second-section .row img {
 	border-radius: 12px;
-	box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.26);
-	margin-top: 24px;
-	padding: 0;
 }
 
-#second-section .col {
-	padding: 0;
+.card-panel {
+	border-radius: 12px;
+	text-align: center;
+	padding: 10px;
 }
 
-#second-section img {
-	border-radius: 6px 0 0 6px;
-	display: block;
+#second-section .card-panel {
+	min-height: 118px; /*defined the value based on the img height when it disappears*/
+	max-width: 100%;
+	margin: 0px; /*the card-panel comes with margins as default. this will eliminate them. inspect to show the margins*/
 }
 
-#second-section h3, p {
-	padding: 0 20px;
+@media (max-width: 992px) {
+  #second-section .img{
+  	display: none;
+  }
+  #second-section .card-panel h3, p{
+  		text-align: left !important;
+  }
 }
+
 
 #right-card {
 	text-align: right;
@@ -96,9 +112,15 @@ header {
 	border-radius: 0 6px 6px 0;
 }
 
+
 #third-section {
 	background-color: #3498db;
 	padding: 60px 0 24px;
+}
+
+
+#third-section h3 {
+	margin-top: 10px;
 }
 
 #third-section .card-panel {
@@ -120,10 +142,13 @@ header {
 	color: rgba(0, 0, 0, 0.54);
 }
 
+
 .flex {
 	display: flex;
 	flex-wrap: wrap;
 }
+
+
 
 .btn-general {
 	border-radius: 32px;
@@ -155,7 +180,7 @@ header {
 }
 
 #fourth-section p {
-	padding: 0 60px
+	padding: 0 20px
 }
 
 #fourth-section span {
@@ -206,6 +231,8 @@ header {
 	margin-bottom: 20px;
 }
 
+
+
 h1{
 	font-size: 40px;
 	text-align: center;
@@ -227,6 +254,7 @@ h2 {
 	color: black;
 }
 
+
 h3 {
 	font-size: 18px;
 	text-transform: uppercase;
@@ -236,16 +264,8 @@ h4 {
 	font-size: 17px;
 }
 
+
 @media (max-width: 992px) {
-	#second-section .card-panel {
-		text-align: center;
-		padding: 12px 24px;
-	}
-
-	#second-section h3, p {
-		padding: 0;
-	}
-
 	#top-image {
 		margin-bottom: 20px;
 	}
@@ -261,7 +281,7 @@ h4 {
 	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 992px) {
 	#first-section {
 		padding: 100px 0;
 	}
@@ -270,6 +290,12 @@ h4 {
 		text-align: center;
 	}
 
+	#first-section h4 {
+		text-align: center;
+	}
+}
+
+@media (max-width: 600px) {
 	.btn-header {
 		padding: initial;
 		width: 100%;
@@ -292,3 +318,4 @@ h4 {
 		font-size: 24px;
 	}
 }
+
