@@ -84,7 +84,7 @@ header {
 	display: block;
 }
 
-#second-section h3, p {
+#second-section h3, #second-section p {
 	padding: 0 20px;
 }
 
@@ -235,6 +235,10 @@ h3 {
 h4 {
 	font-size: 17px;
 }
+
+input[type=date]::-webkit-inner-spin-button, input[type=date]::-webkit-clear-button {
+	display: none;
+	-webkit-appearance: none; }
 
 @media (max-width: 992px) {
 	#second-section .card-panel {
