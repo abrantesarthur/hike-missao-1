@@ -101,8 +101,12 @@ header {
 	padding-left: 0;
 }
 
+#second-section h3, #second-section p {
+	padding: 0 20px;
+
 #second-section .zero-padding-right {
 	padding-right: 0;
+
 }
 
 @media (max-width: 992px) {
@@ -274,6 +278,20 @@ h3 {
 h4 {
 	font-size: 17px;
 }
+
+input[type=date]::-webkit-inner-spin-button, input[type=date]::-webkit-clear-button {
+	display: none;
+	-webkit-appearance: none; }
+
+@media (max-width: 992px) {
+	#second-section .card-panel {
+		text-align: center;
+		padding: 12px 24px;
+	}
+
+	#second-section h3, p {
+		padding: 0;
+	}
 
 
 @media (max-width: 992px) {
