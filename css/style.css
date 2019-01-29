@@ -10,6 +10,7 @@ nav {
 nav ul a {
 	text-transform: uppercase;
 	color: black;
+	font-size: 14px;
 }
 
 nav .brand-logo {
@@ -109,7 +110,7 @@ header {
   #second-section .img{
   	display: none;
   }
-  #second-section .card-panel h3, p{
+  #second-section .card-panel h3, #second-section .card-panel p{
   		text-align: left !important;
   }
 }
@@ -158,8 +159,6 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 }
-
-
 
 .btn-general {
 	border-radius: 32px;
@@ -230,19 +229,13 @@ header {
 
 #footer .svg-icon {
 	vertical-align: middle;
-	margin: 15px 6px;
+	margin: 0 6px;
 }
 
 #footer p {
-	margin: 0;
-}
-
-#footer .endereço {
 	font-size: 12px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
-
-
 
 h1{
 	font-size: 40px;
@@ -297,13 +290,15 @@ h4 {
 		padding: 100px 0;
 	}
 
-	#first-section h1 {
+	#first-section .col {
+		text-align: center;
+		padding: 0;
+	}
+
+	#first-section h1, #first-section h4 {
 		text-align: center;
 	}
 
-	#first-section h4 {
-		text-align: center;
-	}
 }
 
 @media (max-width: 600px) {
@@ -329,4 +324,3 @@ h4 {
 		font-size: 24px;
 	}
 }
-
