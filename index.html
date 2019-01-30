@@ -27,7 +27,7 @@
 						<li><a href="#second-section">Por que cachorros</a></li>
 				  		<li><a href="#third-section">Como cuidar</a></li>
 				  		<li><a href="#fourth-section">Depoimentos</a></li>
-				  		<li><a href="#fifth-section">Adotar</a></li>
+				  		<li><a href="#modal1" class="modal-trigger waves-effect waves-light btn btn-header">Adotar</a></li>
 					</ul>
 				</div>
 			</div>
@@ -40,6 +40,75 @@
   		<li><a href="#fifth-section">Adotar</a></li>
 	</ul>
 
+	<!-- modal -->
+	<div id="modal1" class="modal">
+    <div class="modal-content">
+			<form>
+				<div class="row">
+					<div class="col s12">
+						<label for="exampleInputName1">Nome</label>
+						<input type="text" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Nos conte seu nome">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12">
+						<label for="exampleInputEmail1">Email</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="amantededogs@gmail.com">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12">
+						<label for="phone">Número de celular</label>
+						<input type="tel" id="phone" name="phone" placeholder="Coloque seu número aqui">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12">
+						<label for="date1">Data de nascimento</label>
+						<input type="date" id="date1">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12">
+						<label>Sexo</label>
+						<p>
+							<label>
+								<input name="gender" type="radio" />
+								<span>Feminino</span>
+							</label>
+						</p>
+						<p>
+							<label>
+								<input name="gender" type="radio" />
+								<span>Masculino</span>
+							</label>
+						</p>
+						<p>
+							<label>
+								<input name="gender" type="radio" />
+								<span>Não declarado</span>
+							</label>
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<select>
+							<option value="" disabled selected>Escolha seu estado</option>
+							<option value="1">Option 1</option>
+							<option value="2">Option 2</option>
+							<option value="3">Option 3</option>
+						</select>
+						<label>Estado onde mora</label>
+					</div>
+				</div>
+			</form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Enviar</a>
+    </div>
+  </div>
+
 	<!-- header -->
 	<header id="first-section">
 		<div class="container">
@@ -50,7 +119,7 @@
 					</div>
 					<div class="col s4 m12 push-s4">
 						<h4 class="hide-on-small-only">Muitos dizem que os nossos companheiros de quatro patas são os animais mais incríveis do mundo. Adote um e descubra porquê.</h4>
-						<a class="waves-effect waves-light btn btn-header">Adotar</a>
+						<a href="#modal1" class="modal-trigger waves-effect waves-light btn btn-header">Adotar</a>
 					</div>
 				</div>
 				<div class="col l4 hide-on-med-and-down">
@@ -154,7 +223,7 @@
 			</div>
 			<div class="row">
 				<div class="col s12 center-align">
-					<a class="waves-effect waves-light btn btn-general">Adotar</a>
+					<a href="#modal1" class="modal-trigger waves-effect waves-light btn btn-general">Adotar</a>
 				</div>
 			</div>
 		</div>
